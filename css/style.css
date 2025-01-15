@@ -47,10 +47,13 @@ body {
 }
 
 #profile{
+    margin-left: 85%;
+}
+
+#prof{
     border-radius: 0.75rem;
     height: 32px;
     width: 32px;
-    margin-left: 85%;
 }
 
 .container {

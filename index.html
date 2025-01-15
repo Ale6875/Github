@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Github</title>
+</head>
+<body>
+    <div class="header">
+        <div class="menu-icon" id="menuIcon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <canvas id="myCanvas" width="32" height="32"></canvas>
+        <script src="js/logo.js"></script>
+        <h1 id="dashboard">Dashboard</h1>
+        <img src="assets/profile.png" alt="" id="profile">
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <div id="sub-sidebar">
+                <h4>Top Repositories</h4>
+                <button id="new">New</button>
+            </div>
+            <ul class="list" id="list1">
+                <div id="link1">
+                    <a href="https://github.com/Ale6875/Github"><li>Ale6875/Logo</li></a>
+                </div>
+
+                <div id="link2">
+                    <a href="https://github.com/Ale6875/Sony"><li>Ale6875/Sony</li></a>
+                </div>
+            </ul>
+        </div>
+
+        <div class="main-content">
+            <h2>Home</h2>
+            <div class="card">
+                <h2 class="h2naslovi">Introduction to GitHub</h2>
+                <p>Get started using GitHub in less than an hour.</p>
+            </div>
+            <div class="card">
+                <h2 class="h2naslovi">GitHub Pages</h2>
+                <p>Create a site or blog from your GitHub repositories with GitHub Pages.</p>
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+            <h2>Latest Changes</h2>
+            <ul class="list">
+                <li>Audit log streaming of API requests is generally available.</li>
+                <li>Codestral 25.01 is now available in GitHub Models.</li>
+                <li>Evolving GitHub Issues (public preview).</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/sweetAlert.js"></script>
+</body>
+</html>

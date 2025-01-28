@@ -90,15 +90,26 @@ body {
     border-radius: 0.375rem;
 }
 
-.main-content {
-    flex: 1;
-    padding: 20px;
-    overflow-y: auto;
-    color: #9198a1;
+.main-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 20px;  /* Add margin to separate from cards */
+    font-weight: bold;
 }
 
-.h2naslovi{
-    color: #4493f8;
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width cards per row */
+    gap: 20px; /* Space between the cards */
+    padding: 20px;
+    max-width: 65%; /* Restrict the main section to 50% of the container width */
+    margin: 0 auto; /* Center the main section horizontally */
+    background-color: #010409; /* Adjust based on your theme */
+}
+
+.main-content::-webkit-scrollbar {
+    display: none;
 }
 
 .right-sidebar {
@@ -110,22 +121,44 @@ body {
 }
 
 .card {
-    background-color: #151b23;
+    background-color: #242526; /* Card background */
+    color: #fff; /* Text color */
     padding: 15px;
-    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 1px solid #30363d;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card:hover{
-    text-decoration: underline #4493f8;
-    cursor: pointer;
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.card h2 {
-    font-size: 16px;
-    margin: 0 0 10px;
+.card-description {
+    font-size: 0.95rem;
+    color: #9198a1;
+}
+
+.learn-with{
+    grid-column: span 2; /* Make the link span across both columns */
+    text-align: left;
+    color: #7f858e;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.more-projects-link {
+    color: #4493f8;
+    grid-column: span 2; /* Make the link span across both columns */
+    text-align: left;
+    text-decoration: none;
+    font-size: 0.95rem;
+    margin-bottom: 100px;
+}
+
+.more-projects-link:hover {
+    text-decoration: underline;
 }
 
 .button {
@@ -161,7 +194,15 @@ body {
     margin-bottom: 10px;
 }
 
-a, a:visited{
+#link1:hover, #link2:hover {
+    text-decoration: underline;
+}
+
+.repo{
+    text-decoration: none;
+}
+
+.repo:visited{
     text-decoration: none;
     color: #c9d1d9;
 }

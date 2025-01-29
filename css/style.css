@@ -200,6 +200,7 @@ body {
 
 .repo{
     text-decoration: none;
+    color: #f0f6fc;
 }
 
 .repo:visited{

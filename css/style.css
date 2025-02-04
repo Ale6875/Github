@@ -6,6 +6,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 .header {
@@ -60,14 +61,20 @@ body {
     display: flex;
     flex: 1;
     overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .sidebar {
-    width: 250px;
+    width: 15%;
+    min-width: 220px;
+    max-width: 300px;
     background-color: #0d1117;
     padding: 20px;
     border-right: 1px solid #30363d;
     overflow-y: auto;
+    flex-shrink: 0;
 }
 
 #sub-sidebar{
@@ -94,18 +101,20 @@ body {
     text-align: center;
     font-size: 1.5rem;
     color: #ffffff;
-    margin-bottom: 20px;  /* Add margin to separate from cards */
+    margin-bottom: 20px;
     font-weight: bold;
 }
 
 .main-content {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width cards per row */
-    gap: 20px; /* Space between the cards */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     padding: 20px;
-    max-width: 65%; /* Restrict the main section to 50% of the container width */
-    margin: 0 auto; /* Center the main section horizontally */
-    background-color: #010409; /* Adjust based on your theme */
+    max-width: 65%;
+    margin: 0 auto;
+    background-color: #010409;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .main-content::-webkit-scrollbar {
@@ -113,16 +122,20 @@ body {
 }
 
 .right-sidebar {
-    width: 300px;
+    width: 20%;
+    min-width: 220px;
+    max-width: 300px;
     background-color: #0d1117;
     padding: 20px;
     border-left: 1px solid #30363d;
     overflow-y: auto;
+    overflow: hidden;
+    flex-shrink: 0;
 }
 
 .card {
-    background-color: #242526; /* Card background */
-    color: #fff; /* Text color */
+    background-color: #242526;
+    color: #ffffff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -141,7 +154,7 @@ body {
 }
 
 .learn-with{
-    grid-column: span 2; /* Make the link span across both columns */
+    grid-column: span 2;
     text-align: left;
     color: #7f858e;
     text-decoration: none;
@@ -150,7 +163,7 @@ body {
 
 .more-projects-link {
     color: #4493f8;
-    grid-column: span 2; /* Make the link span across both columns */
+    grid-column: span 2;
     text-align: left;
     text-decoration: none;
     font-size: 0.95rem;

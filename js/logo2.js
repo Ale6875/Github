@@ -1,7 +1,7 @@
 const canvas2 = document.getElementById('myCanvas2');
 const ctx2 = canvas2.getContext('2d');
 
-const scaleFactor2 = 100 / 256;
+const scaleFactor2 = 110 / 256;
 
 ctx2.scale(scaleFactor2, scaleFactor2);
 
